@@ -8,12 +8,10 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-# Rails.application.config.assets.precompile += %w( search.js )
-
 Rails.application.config.assets.precompile << Proc.new { |path|
-  if path =~ /\.(webm|ogg|mp4|scss|js|png|svg|eot|woff|ttf)\z/
+  if path =~ /\.(webm|ogg|mp4|scss|js|png|jpg|svg|eot|woff|ttf)\z/
     full_path = Rails.application.assets.resolve(path)
-    app_assets_path = Rails.root.join('app', 'assets').to_s
+    app_assets_path = Rails.root.join('app', 'assets','images','gallery').to_s
     #vendor_assets_path = Rails.root.join('vendor', 'assets','bower_components','unitegallery').to_s
 
     #if ((full_path.starts_with? app_assets_path) || (full_path.starts_with? vendor_assets_path)) && (!path.starts_with? '_')
