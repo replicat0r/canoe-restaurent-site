@@ -11,7 +11,7 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.precompile += %w( search.js )
 
 Rails.application.config.assets.precompile << Proc.new { |path|
-  if path =~ /\.(scss|js|png|svg|eot|woff|ttf)\z/
+  if path =~ /\.(webm|ogg|mp4|scss|js|png|svg|eot|woff|ttf)\z/
     full_path = Rails.application.assets.resolve(path)
     app_assets_path = Rails.root.join('app', 'assets').to_s
     #vendor_assets_path = Rails.root.join('vendor', 'assets','bower_components','unitegallery').to_s
