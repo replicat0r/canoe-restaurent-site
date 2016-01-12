@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require_tree .
+//= require foundation.min
+//= require smooth-scroll
+//= require skrollr.min
+//= require spectragram.min
+//= require jquery.flexslider-min
+//= require lightbox.min
+//= require jquery-ui/datepicker
+
+//= require scripts
