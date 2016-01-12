@@ -47,26 +47,26 @@
 </section>
 <a id="about" class="in-page-link"></a>
 <section class="text-2">
-					<div class="row">
-						<div class="medium-6 columns">
-							<div class="image-grid">
-								<a href="builder.html#"><img alt="Thumbnail" src="../img/thumb1.jpg"></a>
-								<a href="builder.html#"><img alt="Thumbnail" src="../img/thumb2.jpg"></a>
-								<a href="builder.html#"><img alt="Thumbnail" src="../img/thumb3.jpg"></a>
-								<a href="builder.html#"><img alt="Thumbnail" src="../img/thumb4.jpg"></a>
-							</div>
-						</div>
-					
-						<div class="medium-6 columns">
-							<h3>Using only local produce means that our dishes stay ultra trendy and expensive.</h3>
-							<hr>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 	  			
-							</p>
-							<a href="builder.html#" class="button">Tell Me Less</a>	
-						</div>
-					</div>
-				  </section>	
+	<div class="row">
+		<div class="medium-6 columns">
+			<div class="image-grid">
+				<a href="builder.html#"><img alt="Thumbnail" src="../img/thumb1.jpg"></a>
+				<a href="builder.html#"><img alt="Thumbnail" src="../img/thumb2.jpg"></a>
+				<a href="builder.html#"><img alt="Thumbnail" src="../img/thumb3.jpg"></a>
+				<a href="builder.html#"><img alt="Thumbnail" src="../img/thumb4.jpg"></a>
+			</div>
+		</div>
+		
+		<div class="medium-6 columns">
+			<h3>Using only local produce means that our dishes stay ultra trendy and expensive.</h3>
+			<hr>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			</p>
+			<a href="builder.html#" class="button">Tell Me Less</a>
+		</div>
+	</div>
+</section>
 <a id="menu" class="in-page-link"></a>
 <section class="divider-background">
 	<div class="background-image-holder parallax-background">
@@ -360,219 +360,214 @@
 																			</div>
 																		</section>
 																		<a id="gallery" class="in-page-link"></a>
-																			<section>
-																				<div class="container">
-																					<div class="row">
-																						<div class="medium-12 columns text-center">
-																							<div class="page-title">
-																								<h3>Image Gallery</h3>
-																								<span class="sub-title">Some of our mouth watering dish..</span>
-																							</div>
+																		<section>
+																			<div class="container">
+																				<div class="row">
+																					<div class="medium-12 columns text-center">
+																						<div class="page-title">
+																							<h3>Image Gallery</h3>
+																							<span class="sub-title">Some of our mouth watering dish..</span>
 																						</div>
-																					</div>
-																					
-																					<div class="row">
-																						<div class="image-gallery">
-
-																						<% @gallery.each do |image| %>
-																								<div class="medium-4 columns vgn">
-															<a class="vgm" href=' <%= asset_path("gallery/#{image.split('/').last}") %>'  data-lightbox="true">
-																									<div class="lightbox-image-holder">
-																										<div class="background-image-holder">
-
-																				 <%= image_tag "gallery/#{image.split('/').last}" ,class: 'background-image lightbox-image '%>
-
-																										</div>
-																									</div>
-																								</a>
-																							</div>
-																							
-
-																						<% end %>
-																		
-																			
-																							
-																						</div>
-																						
-																					</div>
-																					
-																					
-																				</div>
-																		</section>
-																		<section class="background-mid-grey pad-small">
-					<div class="row">
-						<div class="medium-4 columns text-center">
-							<img alt="Logo" src="../img/logo-dark.png" class="medium-3 push-small">
-							<h4>Attica Restaurant</h4>
-							<p>
-								Daily: 4:00pm till Late
-							
-							</p>
-						</div>
-					
-						<div class="medium-4 columns text-center">
-							<i class="icon icon-large icon-phone"></i>
-							<h4>Make A Booking</h4>
-							<p>
-								+61 4832 9272
-							
-							</p>
-						</div>
-					
-						<div class="medium-4 columns text-center">
-							<i class="icon icon-large icon-map"></i>
-							<h4>Stop By</h4>
-							<p>
-								438 Queens Rd, Melbourne
-							
-							</p>
-						</div>
-					</div>
-				  </section>
-																		<a id="reservations" class="in-page-link"></a>
-																			<section class="no-pad" data-vgl="{&quot;buttonText&quot;:&quot;Edit OpenTable ID&quot;,&quot;vgi&quot;:&quot;Edit OpenTable ID&quot;,&quot;vgj&quot;:&quot;Enter your OpenTable ID here to control what restaurant the reservation form will link to.&quot;,&quot;vgk&quot;:&quot;OpenTable ID:&quot;,&quot;selector&quot;:&quot;.open-table-container&quot;,&quot;attribute&quot;:&quot;data-restaurant-id&quot;}">
-																				
-																				<div class="photo-container medium-5 left-align divider-background">
-																					<div class="background-image-holder parallax-background">
-																
-
-																						<%= image_tag("hero3.jpg" ,class:"background-image") %>
 																					</div>
 																				</div>
 																				
 																				<div class="row">
-																					
-																					<div class="medium-6 columns text-center right">
-																						<div class="page-title">
-																							<h3>Reservations</h3>
-																							<span class="sub-title">Powered by OpenTable</span>
+																					<div class="image-gallery">
+																						<% @gallery.each do |image| %>
+																						<div class="medium-4 columns vgn">
+																							<a class="vgm" href=' <%= asset_path("gallery/#{image.split('/').last}") %>'  data-lightbox="true">
+																								<div class="lightbox-image-holder">
+																									<div class="background-image-holder">
+																										<%= image_tag "gallery/#{image.split('/').last}" ,class: 'background-image lightbox-image '%>
+																									</div>
+																								</div>
+																							</a>
 																						</div>
 																						
-																						<p>
-																							Bookings are essential, especially on weekends or when dining with large groups.<br class="hide-for-mobile">
-																							You may also book online using Open Table
-																						</p>
+																						<% end %>
 																						
-																						<div class="open-table-container" data-restaurant-id="">
-																							
-																							<div id="OT_searchWrapperAll">
-																								<form name="ism" id="ism" method="POST" action="https://secure.opentable.com/ism/interim.aspx">
-																									<div id="OT_searchWrapper">
-																										<h2 class="OT_feedTitle">Book a Table</h2>
-																										<dl id="OT_defList">
-																											<dt id="OT_partySizeLbl"></dt>
-																											<dd id="OT_partySize">
-																											<select name="PartySize" class="feedFormField">
-																												<option value="1">1 Person</option>
-																												<option value="2" selected="selected">2 People</option>
-																												<option value="3">3 People</option>
-																												<option value="4">4 People</option>
-																												<option value="5">5 People</option>
-																												<option value="6">6 People</option>
-																												<option value="7">7 People</option>
-																												<option value="8">8 People</option>
-																												<option value="9">9 People</option>
-																												<option value="10">10 People</option>
-																												<option value="11">11 People</option>
-																												<option value="12">12 People</option>
-																												<option value="13">13 People</option>
-																												<option value="14">14 People</option>
-																												<option value="15">15 People</option>
-																												<option value="16">16 People</option>
-																												<option value="17">17 People</option>
-																												<option value="18">18 People</option>
-																												<option value="19">19 People</option>
-																												<option value="20">20 People</option>
-																											</select>
-																											</dd>
-																											<dt id="OT_dateLbl"></dt>
-																											<dd id="OT_date">
-																											<div>
-																												<input type="text" class="OT_feedFormfieldCalendar datepicker" class="startDate" name="startDate" value="">
-																											</div>
-																											<p id="dateDisplay">mm/dd/yyyy</p>
-																											<div id="cal1" class="imgCal"></div>
-																											</dd>
-																											<dt id="OT_timeLbl"></dt>
-																											<dd id="OT_time">
-																											<select name="ResTime" class="feedFormField">
-																												<option value="12:00 AM">12:00 AM</option>
-																												<option value="12:30 AM">12:30 AM</option>
-																												<option value="1:00 AM">1:00 AM</option>
-																												<option value="1:30 AM">1:30 AM</option>
-																												<option value="2:00 AM">2:00 AM</option>
-																												<option value="2:30 AM">2:30 AM</option>
-																												<option value="3:00 AM">3:00 AM</option>
-																												<option value="3:30 AM">3:30 AM</option>
-																												<option value="4:00 AM">4:00 AM</option>
-																												<option value="4:30 AM">4:30 AM</option>
-																												<option value="5:00 AM">5:00 AM</option>
-																												<option value="5:30 AM">5:30 AM</option>
-																												<option value="6:00 AM">6:00 AM</option>
-																												<option value="6:30 AM">6:30 AM</option>
-																												<option value="7:00 AM">7:00 AM</option>
-																												<option value="7:30 AM">7:30 AM</option>
-																												<option value="8:00 AM">8:00 AM</option>
-																												<option value="8:30 AM">8:30 AM</option>
-																												<option value="9:00 AM">9:00 AM</option>
-																												<option value="9:30 AM">9:30 AM</option>
-																												<option value="10:00 AM">10:00 AM</option>
-																												<option value="10:30 AM">10:30 AM</option>
-																												<option value="11:00 AM">11:00 AM</option>
-																												<option value="11:30 AM">11:30 AM</option>
-																												<option value="12:00 PM">12:00 PM</option>
-																												<option value="12:30 PM">12:30 PM</option>
-																												<option value="1:00 PM">1:00 PM</option>
-																												<option value="1:30 PM">1:30 PM</option>
-																												<option value="2:00 PM">2:00 PM</option>
-																												<option value="2:30 PM">2:30 PM</option>
-																												<option value="3:00 PM">3:00 PM</option>
-																												<option value="3:30 PM">3:30 PM</option>
-																												<option value="4:00 PM">4:00 PM</option>
-																												<option value="4:30 PM">4:30 PM</option>
-																												<option value="5:00 PM">5:00 PM</option>
-																												<option value="5:30 PM">5:30 PM</option>
-																												<option value="6:00 PM">6:00 PM</option>
-																												<option value="6:30 PM">6:30 PM</option>
-																												<option value="7:00 PM">7:00 PM</option>
-																												<option value="7:30 PM">7:30 PM</option>
-																												<option value="8:00 PM">8:00 PM</option>
-																												<option value="8:30 PM">8:30 PM</option>
-																												<option value="9:00 PM" selected="selected">9:00 PM</option>
-																												<option value="9:30 PM">9:30 PM</option>
-																												<option value="10:00 PM">10:00 PM</option>
-																												<option value="10:30 PM">10:30 PM</option>
-																												<option value="11:00 PM">11:00 PM</option>
-																												<option value="11:30 PM">11:30 PM</option>
-																											</select>
-																											</dd>
-																											<dt id="OT_empty"></dt>
-																											<dd id="OT_submitWrap">
-																											<input alt="Image" type="IMAGE" class="OT_TableButton" id="submit" name="submit" src="http://www.mediumra.re/attica/variant/img/hero1.jpg">
-																											</dd>
-																										</dl>
-																									</div>
-																									<div class="OT_hidden">
-																										<input type="hidden" class="OT_hidden" name="RestaurantID" value="">
-																										<input type="hidden" class="OT_hidden" name="GeoID" value="7">
-																										<input type="hidden" class="OT_hidden" name="txtHidServerTime" value="6/26/2014 8:50 PM">
-																										<input type="hidden" class="OT_hidden" name="txtDateFormat" value="MM/dd/yyyy">
-																									</div>
-																								</form>
-																							<noscript>&lt;a href="http://www.omniture.com" title="Web Analytics"&gt;&lt;img src="http://o.opentable.com/b/ss/otrestref/1/H.22.1--NS/0" height="1" width="1" border="0" alt="" /&gt;&lt;/a&gt;</noscript></div>  			</div>
-																							<a href="builder.html#" class="button open-table-button">Find A Table</a>
-																							
-																						</div>
+																						
+																						
 																					</div>
 																					
-																				</section>
-										
+																				</div>
+																				
+																				
+																			</div>
+																		</section>
+																		<section class="background-mid-grey pad-small">
+																			<div class="row">
+																				<div class="medium-4 columns text-center">
+																					<img alt="Logo" src="../img/logo-dark.png" class="medium-3 push-small">
+																					<h4>Attica Restaurant</h4>
+																					<p>
+																						Daily: 4:00pm till Late
+																						
+																					</p>
+																				</div>
+																				
+																				<div class="medium-4 columns text-center">
+																					<i class="icon icon-large icon-phone"></i>
+																					<h4>Make A Booking</h4>
+																					<p>
+																						+61 4832 9272
+																						
+																					</p>
+																				</div>
+																				
+																				<div class="medium-4 columns text-center">
+																					<i class="icon icon-large icon-map"></i>
+																					<h4>Stop By</h4>
+																					<p>
+																						438 Queens Rd, Melbourne
+																						
+																					</p>
+																				</div>
+																			</div>
+																		</section>
+																		<a id="reservations" class="in-page-link"></a>
+																		<section class="no-pad" data-vgl="{&quot;buttonText&quot;:&quot;Edit OpenTable ID&quot;,&quot;vgi&quot;:&quot;Edit OpenTable ID&quot;,&quot;vgj&quot;:&quot;Enter your OpenTable ID here to control what restaurant the reservation form will link to.&quot;,&quot;vgk&quot;:&quot;OpenTable ID:&quot;,&quot;selector&quot;:&quot;.open-table-container&quot;,&quot;attribute&quot;:&quot;data-restaurant-id&quot;}">
+																			
+																			<div class="photo-container medium-5 left-align divider-background">
+																				<div class="background-image-holder parallax-background">
+																					
+																					<%= image_tag("hero3.jpg" ,class:"background-image") %>
+																				</div>
+																			</div>
+																			
+																			<div class="row">
+																				
+																				<div class="medium-6 columns text-center right">
+																					<div class="page-title">
+																						<h3>Reservations</h3>
+																						<span class="sub-title">Powered by OpenTable</span>
+																					</div>
+																					
+																					<p>
+																						Bookings are essential, especially on weekends or when dining with large groups.<br class="hide-for-mobile">
+																						You may also book online using Open Table
+																					</p>
+																					
+																					<div class="open-table-container" data-restaurant-id="">
+																						
+																						<div id="OT_searchWrapperAll">
+																							<form name="ism" id="ism" method="POST" action="https://secure.opentable.com/ism/interim.aspx">
+																								<div id="OT_searchWrapper">
+																									<h2 class="OT_feedTitle">Book a Table</h2>
+																									<dl id="OT_defList">
+																										<dt id="OT_partySizeLbl"></dt>
+																										<dd id="OT_partySize">
+																										<select name="PartySize" class="feedFormField">
+																											<option value="1">1 Person</option>
+																											<option value="2" selected="selected">2 People</option>
+																											<option value="3">3 People</option>
+																											<option value="4">4 People</option>
+																											<option value="5">5 People</option>
+																											<option value="6">6 People</option>
+																											<option value="7">7 People</option>
+																											<option value="8">8 People</option>
+																											<option value="9">9 People</option>
+																											<option value="10">10 People</option>
+																											<option value="11">11 People</option>
+																											<option value="12">12 People</option>
+																											<option value="13">13 People</option>
+																											<option value="14">14 People</option>
+																											<option value="15">15 People</option>
+																											<option value="16">16 People</option>
+																											<option value="17">17 People</option>
+																											<option value="18">18 People</option>
+																											<option value="19">19 People</option>
+																											<option value="20">20 People</option>
+																										</select>
+																										</dd>
+																										<dt id="OT_dateLbl"></dt>
+																										<dd id="OT_date">
+																										<div>
+																											<input type="text" class="OT_feedFormfieldCalendar datepicker" class="startDate" name="startDate" value="">
+																										</div>
+																										<p id="dateDisplay">mm/dd/yyyy</p>
+																										<div id="cal1" class="imgCal"></div>
+																										</dd>
+																										<dt id="OT_timeLbl"></dt>
+																										<dd id="OT_time">
+																										<select name="ResTime" class="feedFormField">
+																											<option value="12:00 AM">12:00 AM</option>
+																											<option value="12:30 AM">12:30 AM</option>
+																											<option value="1:00 AM">1:00 AM</option>
+																											<option value="1:30 AM">1:30 AM</option>
+																											<option value="2:00 AM">2:00 AM</option>
+																											<option value="2:30 AM">2:30 AM</option>
+																											<option value="3:00 AM">3:00 AM</option>
+																											<option value="3:30 AM">3:30 AM</option>
+																											<option value="4:00 AM">4:00 AM</option>
+																											<option value="4:30 AM">4:30 AM</option>
+																											<option value="5:00 AM">5:00 AM</option>
+																											<option value="5:30 AM">5:30 AM</option>
+																											<option value="6:00 AM">6:00 AM</option>
+																											<option value="6:30 AM">6:30 AM</option>
+																											<option value="7:00 AM">7:00 AM</option>
+																											<option value="7:30 AM">7:30 AM</option>
+																											<option value="8:00 AM">8:00 AM</option>
+																											<option value="8:30 AM">8:30 AM</option>
+																											<option value="9:00 AM">9:00 AM</option>
+																											<option value="9:30 AM">9:30 AM</option>
+																											<option value="10:00 AM">10:00 AM</option>
+																											<option value="10:30 AM">10:30 AM</option>
+																											<option value="11:00 AM">11:00 AM</option>
+																											<option value="11:30 AM">11:30 AM</option>
+																											<option value="12:00 PM">12:00 PM</option>
+																											<option value="12:30 PM">12:30 PM</option>
+																											<option value="1:00 PM">1:00 PM</option>
+																											<option value="1:30 PM">1:30 PM</option>
+																											<option value="2:00 PM">2:00 PM</option>
+																											<option value="2:30 PM">2:30 PM</option>
+																											<option value="3:00 PM">3:00 PM</option>
+																											<option value="3:30 PM">3:30 PM</option>
+																											<option value="4:00 PM">4:00 PM</option>
+																											<option value="4:30 PM">4:30 PM</option>
+																											<option value="5:00 PM">5:00 PM</option>
+																											<option value="5:30 PM">5:30 PM</option>
+																											<option value="6:00 PM">6:00 PM</option>
+																											<option value="6:30 PM">6:30 PM</option>
+																											<option value="7:00 PM">7:00 PM</option>
+																											<option value="7:30 PM">7:30 PM</option>
+																											<option value="8:00 PM">8:00 PM</option>
+																											<option value="8:30 PM">8:30 PM</option>
+																											<option value="9:00 PM" selected="selected">9:00 PM</option>
+																											<option value="9:30 PM">9:30 PM</option>
+																											<option value="10:00 PM">10:00 PM</option>
+																											<option value="10:30 PM">10:30 PM</option>
+																											<option value="11:00 PM">11:00 PM</option>
+																											<option value="11:30 PM">11:30 PM</option>
+																										</select>
+																										</dd>
+																										<dt id="OT_empty"></dt>
+																										<dd id="OT_submitWrap">
+																										<input alt="Image" type="IMAGE" class="OT_TableButton" id="submit" name="submit" src="http://www.mediumra.re/attica/variant/img/hero1.jpg">
+																										</dd>
+																									</dl>
+																								</div>
+																								<div class="OT_hidden">
+																									<input type="hidden" class="OT_hidden" name="RestaurantID" value="">
+																									<input type="hidden" class="OT_hidden" name="GeoID" value="7">
+																									<input type="hidden" class="OT_hidden" name="txtHidServerTime" value="6/26/2014 8:50 PM">
+																									<input type="hidden" class="OT_hidden" name="txtDateFormat" value="MM/dd/yyyy">
+																								</div>
+																							</form>
+																						<noscript>&lt;a href="http://www.omniture.com" title="Web Analytics"&gt;&lt;img src="http://o.opentable.com/b/ss/otrestref/1/H.22.1--NS/0" height="1" width="1" border="0" alt="" /&gt;&lt;/a&gt;</noscript></div>  			</div>
+																						<a href="builder.html#" class="button open-table-button">Find A Table</a>
+																						
+																					</div>
+																				</div>
+																				
+																			</section>
+																			
 																		</section>
 																		<a id="contact" class="in-page-link"></a>
 																		<section class="contact contact-1 divider-background">
 																			<div class="background-image-holder parallax-background">
 																				<div class="overlay background-dark-grey"></div>
-																			<%= image_tag("gallery2.jpg" ,class:"background-image") %>
+																				<%= image_tag("gallery2.jpg" ,class:"background-image") %>
 																			</div>
 																			
 																			<div class="row">
