@@ -183,7 +183,7 @@ nav.off-screen .bottom-content ul li{ font-size: 11px; margin-bottom: 6px; }
 .menu-filters li:last-child{ margin-right: 0px; }
 .menu-filters li.active{ border-bottom: 1px solid #333;}
 
-.narrow-menu{ overflow: hidden; display: width: 100%; text-align: left; display: none; }
+.narrow-menu{ overflow: hidden; width: 100%; text-align: left; display: none; }
 .narrow-menu.active{ display: block; }
 .narrow-menu .menu-item{ width: 48%; padding-right: 2%; float: left; }
 .narrow-menu .menu-item:nth-child(even){ padding-right: 0px; padding-left: 2%; }
