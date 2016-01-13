@@ -10,6 +10,7 @@ Rails.application.config.assets.version = '1.0'
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 Rails.application.config.assets.precompile << Proc.new { |path|
   if path =~ /\.(webm|ogg|mp4|scss|js|png|jpg|svg|eot|woff|ttf)\z/
+
     full_path = Rails.application.assets.resolve(path)
     app_assets_path = Rails.root.join('app', 'assets','images','gallery','fonts').to_s
     #vendor_assets_path = Rails.root.join('vendor', 'assets','bower_components','unitegallery').to_s
